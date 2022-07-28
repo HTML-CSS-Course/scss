@@ -1,0 +1,27 @@
+@use "sass:math";
+
+.modal {
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  &-content {
+    min-width: 600px;
+    min-height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    @include absolute-center(blue);
+    width: math.floor(960, 600) * 100;
+
+    h2 {
+      @include heading-style;
+    }
+  }
+}
+

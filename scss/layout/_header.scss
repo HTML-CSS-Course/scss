@@ -1,0 +1,15 @@
+.navigation-list {
+  height: 90px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+  background-color: $main-brand-color;
+
+  a {
+    color: $max-color;
+    text-decoration: none;
+    font-size: $navigation-size;
+  }
+}

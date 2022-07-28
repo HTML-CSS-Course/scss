@@ -1,0 +1,14 @@
+@mixin absolute-center($main-color: red) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $main-color;
+}
+
+@mixin heading-style() {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
